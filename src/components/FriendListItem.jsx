@@ -1,11 +1,10 @@
-export const FriendListItem = props => {
+export const FriendListItem = ({avatar, name, isOnline}) => {
 
-   // const {avatar, name, isOnline} = props;
     return (
         <li className="item">
-        <span className="status">{props.isOnline? 'Yes' : 'No' }</span>
-        <img className="avatar" src={props.avatar} alt="User avatar" width="48" />
-        <p className="name">{props.name}</p>
+        <span className="status">{isOnline? 'Yes' : 'No' }</span>
+        <img className="avatar" src={avatar} alt="User avatar" width="48" />
+        <p className="name">{name}</p>
       </li>
     );
   }; 
