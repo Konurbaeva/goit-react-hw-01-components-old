@@ -8,25 +8,25 @@
 
 export const Statistics = ({title, stats}) => {
     return (
-    <section class="statistics">
-  {title? <h2 class="title">Upload stats</h2>: null}
+    <section className="statistics">
+  {title? <h2 className="title">Upload stats</h2>: null}
 
-  <ul class="stat-list">
-    <li class="item">
-      <span class="label">{stats[0].label}</span>
-      <span class="percentage">{stats[0].percentage}</span>
+  <ul className="stat-list">
+    <li className="item">
+      <span className="label">{stats[0].label}</span>
+      <span className="percentage">{stats[0].percentage}</span>
     </li>
-    <li class="item">
-      <span class="label">{stats[1].label}</span>
-      <span class="percentage">{stats[1].percentage}</span>
+    <li className="item">
+      <span className="label">{stats[1].label}</span>
+      <span className="percentage">{stats[1].percentage}</span>
     </li>
-    <li class="item">
-      <span class="label">{stats[2].label}</span>
-      <span class="percentage">{stats[2].percentage}</span>
+    <li className="item">
+      <span className="label">{stats[2].label}</span>
+      <span className="percentage">{stats[2].percentage}</span>
     </li>
-    <li class="item">
-      <span class="label">{stats[3].label}</span>
-      <span class="percentage">{stats[3].percentage}</span>
+    <li className="item">
+      <span className="label">{stats[3].label}</span>
+      <span className="percentage">{stats[3].percentage}</span>
     </li>
   </ul>
 </section>
