@@ -1,6 +1,3 @@
-// import {Profile} from './Profile/Profile';
-// import { Statistics } from './Statistics/Statistics';
-
 import {Profile} from './Profile';
 import { Statistics } from './Statistics';
 import {FriendList} from './FriendList';
