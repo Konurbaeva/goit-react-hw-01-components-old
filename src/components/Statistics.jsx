@@ -5,31 +5,38 @@
 //     { "id": "id-4", "label": ".psd", "percentage": 47 },
 //     { "id": "id-5", "label": ".pdf", "percentage": 10 }
 //   ]
+import PropTypes from 'prop-types';
 
-export const Statistics = ({title, stats}) => {
+export const Statistics = ({title,
+   stats: { label, percentage}}) => {
     return (
     <section className="statistics">
   {title && <h2 className="title">{title}</h2>}
 
   <ul className="stat-list">
     <li className="item">
-      <span className="label">{stats[0].label}</span>
-      <span className="percentage">{stats[0].percentage} %</span>
+      <span className="label">{label}</span>
+      <span className="percentage">{percentage} %</span>
     </li>
     <li className="item">
-      <span className="label">{stats[1].label}</span>
-      <span className="percentage">{stats[1].percentage} %</span>
+      <span className="label">{label}</span>
+      <span className="percentage">{percentage} %</span>
     </li>
     <li className="item">
-      <span className="label">{stats[2].label}</span>
-      <span className="percentage">{stats[2].percentage} %</span>
+      <span className="label">{label}</span>
+      <span className="percentage">{percentage} %</span>
     </li>
     <li className="item">
-      <span className="label">{stats[3].label}</span>
-      <span className="percentage">{stats[3].percentage} %</span>
+      <span className="label">{label}</span>
+      <span className="percentage">{percentage} %</span>
     </li>
   </ul>
 </section>
     );
   };
 
+  Statistics.propTypes = {
+    title: PropTypes.string.isRequired,
+    label: PropTypes.string,
+    percentage: PropTypes.symbol
+  }
