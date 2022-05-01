@@ -9,7 +9,7 @@
 export const Statistics = ({title, stats}) => {
     return (
     <section className="statistics">
-  {title? <h2 className="title">Upload stats</h2>: null}
+  {title && <h2 className="title">{title}</h2>}
 
   <ul className="stat-list">
     <li className="item">
