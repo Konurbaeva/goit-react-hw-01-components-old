@@ -14,8 +14,10 @@ export const App = () => {
         height: '100vh',
         justifyContent: 'center',
         alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
+        fontSize: 30,
+        color: '#010101',
+        marginBottom: '10px',
+        padding: '10px',
       }}
     >
      <Profile

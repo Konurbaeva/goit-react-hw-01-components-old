@@ -6,6 +6,9 @@
    border: solid teal;
    justify-content: center;
    align-items: center; 
+   display: block;
+   list-style-type: disc;
+   margin-top: 1em;
 }
 
 .profile:hover {
