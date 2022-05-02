@@ -13,7 +13,7 @@ border-radius: 50%;
 export const FriendListItem = ({avatar, name, isOnline}) => {
     return (
        <div>
-        {isOnline && <SpanOnline>Yes</SpanOnline>}
+        {isOnline && <SpanOnline> <span class="status">Yes</span></SpanOnline>}
         <img className="avatar" src={avatar} alt="User avatar" width="48" />
         <p className="name">{name}</p>
         </div>
