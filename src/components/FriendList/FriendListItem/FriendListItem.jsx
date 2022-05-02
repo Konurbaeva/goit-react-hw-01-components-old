@@ -1,27 +1,19 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components'
 
-
-/* display: flex;
--webkit-box-align: center;
-align-items: center;
-padding: 8px;
-margin-bottom: 10px;
-border: 1px solid rgb(85, 123, 131);
-border-radius: 5px;
- */
-
-
-const Span = styled.span`
+const SpanOnline = styled.span`
 font-size: 1.5em;
 text-align: center;
-background-color:yellow;
+background-color: #35bb23;
+width: 30px;
+height: 30px;
+border-radius: 50%;
 `;
 
 export const FriendListItem = ({avatar, name, isOnline}) => {
     return (
        <div>
-        {isOnline && <Span><span className="status">Online</span></Span>}
+        {isOnline && <SpanOnline>Yes</SpanOnline>}
         <img className="avatar" src={avatar} alt="User avatar" width="48" />
         <p className="name">{name}</p>
         </div>
