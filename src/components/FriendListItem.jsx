@@ -21,13 +21,7 @@ background-color:yellow;
 export const FriendListItem = ({avatar, name, isOnline}) => {
     return (
        <div>
-       {/*  <span className="status">{isOnline && 'Yes'}</span> */}
-
- {/*       {isOnline &&   <span className="status"></span>} */}
-
- <Span>
- {isOnline &&  <span className="status">Online</span>}
- </Span>
+        {isOnline && <Span><span className="status">Online</span></Span>}
         <img className="avatar" src={avatar} alt="User avatar" width="48" />
         <p className="name">{name}</p>
         </div>
