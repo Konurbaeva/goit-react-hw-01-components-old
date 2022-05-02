@@ -5,12 +5,12 @@ import styles from './FriendList.module.css';
 export const FriendList = ({friends}) => {
     return (
         <ul className={styles.friend_list}>
-          {friends.map(item => (
-            <li key={item.id} className="item">
+          {friends.map(({id, avatar, name, isOnline}) => (
+            <li key={id} className="item">
               <FriendListItem
-                 avatar= {item.avatar}
-                 name={item.name}
-                 isOnline= {item.isOnline}
+                 avatar= {avatar}
+                 name={name}
+                 isOnline= {isOnline}
               />       
             </li>
           ))}
