@@ -39,7 +39,9 @@ export const Profile = ({username, tag, location, avatar, stats: {followers, vie
     tag: PropTypes.string.isRequired,
     location:PropTypes.string.isRequired,
     avatar: PropTypes.string.isRequired,
-    followers: PropTypes.number,
-    views: PropTypes.number,
-    likes: PropTypes.number,
+    stats: PropTypes.shape({
+      followers: PropTypes.number,
+      views: PropTypes.number,
+      likes: PropTypes.number,
+    })
   }
